@@ -88,7 +88,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{'Nombre': '...', 'Telefono': '...-...', 'Email': '....gmail.com', 'DNI': '...'}",
+							"raw": "{Nombre: ... , Telefono: ...-... , Email: ....gmail.com, DNI: ...}",
 							"options": {
 								"raw": {
 									"language": "json"
