@@ -6,48 +6,6 @@ USUARIOS = {
     2: {'Nombre': 'Bart', 'Telefono': '8888-8888', 'Email': 'barto.gmail.com', 'DNI': '129313232'}
 }
 
-FICHAS = {
-    1: {'Tratamiento': '.....', 'Ejercicio': '.....' },
-    2: {'Tratamiento': '.....', 'Ejercicio': '.....' }
-}
-
-PLANES = {
-    1: {'Primer Tratamiento:': '.....', 'Segundo Tratamiento': '.....'},
-    2: {'Primer Tratamiento:': '.....', 'Segundo Tratamiento': '.....'}
-}
-
-class Plan(Resource):
-    def get(self, id):
-        if int(id) in PLANES:
-            return PLANES[int(id)], 200
-        return 'El plan no existe'
-
-class Planes(Resource):
-    def get(self):
-        return PLANES, 200
-    
-    def post(self):
-        plan = request.get_json()
-        id = int(max(PLANES.keys())) + 1
-        PLANES[id] = plan
-        return PLANES[id], 201
-
-class Ficha(Resource):
-    def get(self, id):
-        if int(id) in FICHAS:
-            return FICHAS[int(id)], 200
-        return 'La ficha no existe', 404
-
-class Fichas(Resource):
-    def get(self):
-        return FICHAS, 200
-
-    def post(self):
-        ficha = request.get_json()
-        id = int(max(FICHAS.keys())) + 1
-        FICHAS[id] = ficha
-        return FICHAS[id], 201
-
 class Usuario(Resource):
     def get(self, id):
         if int(id) in USUARIOS:

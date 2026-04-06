@@ -1,4 +1,6 @@
 from .usuario import Usuario as UsuarioResource
 from .usuario import Usuarios as UsuariosResource
-from .usuario import Ficha as FichaResource, Fichas as FichasResource
-from .usuario import Plan as PlanResource, Planes as PlanesResource
+from .ficha import Ficha as FichaResource
+from .ficha import Fichas as FichasResource
+from .plan import Plan as PlanResource
+from .plan import Planes as PlanesResource

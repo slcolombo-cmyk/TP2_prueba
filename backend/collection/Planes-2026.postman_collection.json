@@ -1,22 +1,22 @@
 {
 	"info": {
 		"_postman_id": "ea656b82-8af3-49b6-8633-8f4658357d39",
-		"name": "Usuarios-2026",
-		"description": "API Rest para la gestión de usuarios y sus historias clínicas",
+		"name": "Planes-2026",
+		"description": "API Rest para la gestión de planes y sus historias clínicas",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "18143406"
 	},
 	"item": [
 		{
-			"name": "usuarios",
+			"name": "planes",
 			"item": [
 				{
-					"name": "Listado de usuarios",
+					"name": "Listado de planes",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/usuarios",
+							"raw": "http://127.0.0.1:5000/planes",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -26,7 +26,7 @@
 							],
 							"port": "5000",
 							"path": [
-								"usuarios"
+								"planes"
 							]
 						}
 					},
@@ -37,7 +37,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://127.0.0.1:5000/usuarios",
+									"raw": "http://127.0.0.1:5000/planes",
 									"protocol": "http",
 									"host": [
 										"127",
@@ -47,7 +47,7 @@
 									],
 									"port": "5000",
 									"path": [
-										"usuarios"
+										"planes"
 									]
 								}
 							},
@@ -77,18 +77,18 @@
 								}
 							],
 							"cookie": [],
-							"body": "{'Nombre': 'Homero', 'Telefono': '9999-9999', 'Email': 'homero.gmail.com', 'DNI': '23453534'}"
+							"body": "{'Primer Tratamiento:': 'Fisioterapia', 'Segundo Tratamiento': 'Logopedia'}"
 						}
 					]
 				},
 				{
-					"name": "Crear usuario",
+					"name": "Crear plan",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{'Nombre': '...', 'Telefono': '...-...', 'Email': '....gmail.com', 'DNI': '...'}",
+							"raw": "{'Primer Tratamiento:': '...', 'Segundo Tratamiento': '...'}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -96,7 +96,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/usuarios",
+							"raw": "http://127.0.0.1:5000/planes",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -106,20 +106,20 @@
 							],
 							"port": "5000",
 							"path": [
-								"usuarios"
+								"planes"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Actualizar usuario",
+					"name": "Actualizar plan",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{'Nombre': '...', 'Telefono': '...-...', 'Email': '....gmail.com', 'DNI': '...'}",
+							"raw": "{'Primer Tratamiento:': '...', 'Segundo Tratamiento': '...'}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -127,7 +127,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:5000/usuario/2",
+							"raw": "http://127.0.0.1:5000/plan/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -137,7 +137,7 @@
 							],
 							"port": "5000",
 							"path": [
-								"usuario",
+								"plan",
 								"2"
 							]
 						}
@@ -145,12 +145,12 @@
 					"response": []
 				},
 				{
-					"name": "Obtener usuario",
+					"name": "Obtener plan",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/usuario/4",
+							"raw": "http://127.0.0.1:5000/plan/4",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -160,7 +160,7 @@
 							],
 							"port": "5000",
 							"path": [
-								"usuario",
+								"plan",
 								"4"
 							]
 						}
@@ -168,12 +168,12 @@
 					"response": []
 				},
 				{
-					"name": "Eliminar usuario",
+					"name": "Eliminar plan",
 					"request": {
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/usuario/2",
+							"raw": "http://127.0.0.1:5000/plan/2",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -183,7 +183,7 @@
 							],
 							"port": "5000",
 							"path": [
-								"usuario",
+								"plan",
 								"2"
 							]
 						}
