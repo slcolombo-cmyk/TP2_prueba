@@ -77,7 +77,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{'Dia 1:' 'Sentadillas y peso muerto', 'Dia 2': 'Press banca'}"
+							"body": "{Dia 1: Sentadillas y peso muerto, Dia 2: Press banca}"
 						}
 					]
 				},
@@ -88,7 +88,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{'Dia 1': '...', 'Dia 2': '...'}",
+							"raw": "{Dia 1: ..., Dia 2: ...}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -119,7 +119,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{'Tratamiento': '...', 'Ejercicio': '...'}",
+							"raw": "{Tratamiento: ..., Ejercicio: ...}",
 							"options": {
 								"raw": {
 									"language": "json"
