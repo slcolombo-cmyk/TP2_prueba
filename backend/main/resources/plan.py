@@ -11,6 +11,20 @@ class Plan(Resource):
         if int(id) in PLANES:
             return PLANES[int(id)], 200
         return 'El plan no existe'
+    
+    def put(self, id):
+        if int(id) in PLANES:
+            data = request.get_json()
+            plan = PLANES[int(id)]
+            plan.update(data)
+            return 'Plan actualizado con éxito', 200
+        return 'El Plan no existe', 404
+
+    def delete(self, id):
+        if int(id) in PLANES:
+            del PLANES[int(id)]
+            return 'Plan eliminado con éxito', 200
+        return 'El Plan no exixte', 404
 
 class Planes(Resource):
     def get(self):
@@ -21,3 +35,5 @@ class Planes(Resource):
         id = int(max(PLANES.keys())) + 1
         PLANES[id] = plan
         return PLANES[id], 201
+    
+    
