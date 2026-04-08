@@ -2,8 +2,8 @@ from flask import request
 from flask_restful import Resource
 
 PLANES = {
-    1: {'Primer Tratamiento:': '.....', 'Segundo Tratamiento': '.....'},
-    2: {'Primer Tratamiento:': '.....', 'Segundo Tratamiento': '.....'}
+    1: {'Primer Tratamiento': 'Fisioterapia', 'Segundo Tratamiento': 'Logopedia'},
+    2: {'Primer Tratamiento': 'Masaje', 'Segundo Tratamiento': 'Caminata'}
 }
 
 class Plan(Resource):
