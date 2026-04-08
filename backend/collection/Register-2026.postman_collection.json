@@ -1,9 +1,0 @@
-{
-    "info": {
-		"_postman_id": "ea656b82-8af3-49b6-8633-8f4658357d39",
-		"name": "Register-2026",
-		"description": "API Rest para la gestión de register",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "18143406"
-	}
-}
